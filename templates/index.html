@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table style='margin-top: 30px' class="table table-striped table-light">
+        <thead>
+            <tr>
+                <th scope="col"> Symbol </th>
+                <th scope="col"> Company Name </th>
+                <th scope="col"> Shares </th>
+                <th scope="col"> Current Price </th>
+                <th scope="col"> Total Value </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for symbol in portfolio %}
+            <tr>
+                <th scope="row"> {{ symbol }} </th>
+                <td>  {{ portfolio[symbol][0] }}  </td>
+                <td>  {{ portfolio[symbol][1] }}  </td>
+                <td>  {{ portfolio[symbol][2] }}  </td>
+                <td>  {{ portfolio[symbol][3] }}  </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <th scope='row' colspan='5'> CASH: {{ cash }} </th>
+                <!--<td colspan='4' style='text-align:right'> {{ cash }} </td>-->
+            </tr>
+            <tr>
+                <th scope='row' colspan='5'> TOTAL: {{ total }} </th>
+                <!--<td colspan='4' style="text-align:center"> {{ total }} </td>-->
+            </tr>
+
+        </body>
+    </table>
+{% endblock %}
