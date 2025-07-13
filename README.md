@@ -24,7 +24,7 @@ The application is built using Python and the Flask web framework, demonstrating
 ---
 ## 🎥 Video Demonstration
 
-For a complete walkthrough of the website's front-end and features, **please watch the video included in this repository.** It provides a comprehensive tour of the user experience, from registration to buying and selling stocks.
+For a basic walkthrough of the website's front-end and features, **please watch the video included in this repository.**
 
 ---
 ## Usage
